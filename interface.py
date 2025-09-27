@@ -73,7 +73,7 @@ frame.pack(pady=15)
 pergunta = Label(frame, text="", font=("Arial", 20), background="sea green", fg="white")
 pergunta.pack(pady=20)
 
-#Input nome do usuário
+#Frame onde estão os inputs
 frame_input = Frame(frame, background="sea green", bd=5)
 frame_input.pack_forget()
 
@@ -84,10 +84,11 @@ space2.grid(column=0, row=0)
 space3 = Label(frame_input, text="  ", background="sea green")
 space3.grid(column=4, row=0)
 
+#Inserção de resposta
 res_user = Entry(frame_input, font=("Open Sans", 14))
 res_user.grid(column=1, row=0)
 
-#Botão de confirmação do nome
+#Botão de confirmação da resposta
 botao_confirmar = Button(frame_input, text="Confirmar", background="light sea green", command=resposta)
 botao_confirmar.grid(column=3, row=0)
 
