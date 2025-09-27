@@ -6,7 +6,7 @@ interface
 nome_bot = "Anaxímenes"
 print(f"Olá, eu sou {nome_bot}, o bot!")
 
-#Fazer função do jogo
+#fazer função do jogo
 """
 #Jogo - Pedra, Papel e Tesoura
 start = "S"
