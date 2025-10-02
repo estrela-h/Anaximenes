@@ -1,5 +1,7 @@
 from tkinter import *
 
+#Adcionar check box para o jogo
+
 #Inicialização e configuração da janela 
 janela1 = Tk()
 janela1.title("Anaxímenes, o B0T")
@@ -34,7 +36,6 @@ def resposta():
     global controle_perguntas
     if res_user.get() and controle_perguntas == 0:
         answer.config(text=f"Olá, {res_user.get()}.")
-        nome_user = res_user.get()
         res_user.delete(0, END)
         controle_perguntas += 1
     elif res_user.get() and controle_perguntas == 1:
