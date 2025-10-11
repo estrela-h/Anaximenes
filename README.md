@@ -1,4 +1,4 @@
-<h1> Anaxímenes, o B0T </h1>
+<h1 align="center"> Anaxímenes, o B0T </h1>
 <img src=https://img.shields.io/badge/STATUS-EM_DESENVOLVIMENTO-brightgreen />
 <h2> Descrição do Projeto </h2>
 <div> Anaxímenes é um bot que você pode conversar e, em breve, jogar com ele também. <p> 
