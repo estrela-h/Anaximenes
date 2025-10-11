@@ -10,7 +10,7 @@ janela1.config(background="LightSkyBlue2")
 
 apresentacao = Label(janela1, text="Olá, eu sou Anaxímenes,\n o B0T.", font=("Open Sans", 20), background="LightSkyBlue2")
 apresentacao.pack(pady=20)
-controle_perguntas, nome_user = 0, ""
+controle_perguntas = 0
 
 #----------------------------------Conversação----------------------------------------|
 #Função para mudar a cor do frame baseado na resposta do usuário
@@ -65,6 +65,9 @@ def seguir():
     elif controle_perguntas == 2:
         pergunta.config(text="Qual a sua cor favorita?")
         answer.config(text="")
+    elif controle_perguntas == 3:
+        pergunta.config(text="Você gostaria de jogar pedra, papel e tesoura contra mim?")
+        answer.config(text="")
 
 #Frame onde está a pergunta, resposta e botão de confirmação
 frame = Frame(janela1, bg="sea green", width=700, )
@@ -100,5 +103,10 @@ answer.pack_forget()
 #Botão para avançar na conversa
 botao_seguir = Button(janela1, text="Seguir", background="aquamarine2", command=seguir)
 botao_seguir.pack(side=RIGHT, padx=10, pady=50)
+
+#Jogo
+checkbox_var = BooleanVar()
+checkbox = Checkbutton(janela1, text="Agree to terms", variable=checkbox_var)
+checkbox.pack()
 
 janela1.mainloop()
